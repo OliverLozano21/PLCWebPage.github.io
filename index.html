@@ -4,6 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header, main, footer {
+            width: 80%;
+            margin: auto;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+
+        input, textarea {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        footer li {
+            list-style-type: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,21 +58,21 @@
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGJo0Q8K_Qv3eGSybxTg7JSpa40fQjaAEL0g&s" alt="Imagen de PLC">
         <nav>
             <ul>
-                <li><a href="">What is it?</a></li>
-                <li><a href="">Main uses of PLCs</a></li>
-                <li><a href="">Importance</a></li>
+                <li><a href="#what-is-it">What is it?</a></li>
+                <li><a href="#main-uses">Main uses of PLCs</a></li>
+                <li><a href="#importance">Importance</a></li>
             </ul>
         </nav>
     </header>
 
     <!--Este es el contenido principal-->
     <main>
-    <section id="#What is it?">
-    <p><b><em>PLC stands for Programmable Logic Controller.</em></b> <br>It is an industrial digital computer that has been ruggedized and adapted for the control of manufacturing processes, such as assembly lines or robotic devices, or any activity that requires high reliability, ease of programming, and process fault diagnosis. <br>PLCs are commonly used in industrial settings for automation tasks and are known for their durability in harsh environments and flexibility in automation processes.</p>
-    <img src="https://cdn.prod.website-files.com/65f854814fd223fc3678ea53/65f854814fd223fc3678ef17_64ecb591a2f523d7cc5e09a7_plc-programmer-job-1.jpeg" alt="Imagen de programador">
+    <section id="what-is-it">
+        <p><b><em>PLC stands for Programmable Logic Controller.</em></b> <br>It is an industrial digital computer that has been ruggedized and adapted for the control of manufacturing processes, such as assembly lines or robotic devices, or any activity that requires high reliability, ease of programming, and process fault diagnosis. <br>PLCs are commonly used in industrial settings for automation tasks and are known for their durability in harsh environments and flexibility in automation processes.</p>
+        <img src="https://cdn.prod.website-files.com/65f854814fd223fc3678ea53/65f854814fd223fc3678ef17_64ecb591a2f523d7cc5e09a7_plc-programmer-job-1.jpeg" alt="Imagen de programador">
     </section>
     
-    <section id="#Main uses of PLCs">
+    <section id="main-uses">
         <h2>The main uses of PLCs (Programmable Logic Controllers) include a wide range of applications in industrial automation. <br>Some of the key uses are:</h2>  
         <!--Esto es una lista ordenada-->
         <ul>
@@ -35,23 +81,19 @@
             <li>Conveyor Systems: PLCs are widely used to manage and automate conveyor systems, cranes, and product distribution systems.</li>
             <li>Building Automation and HVAC Systems: PLCs control heating, ventilation, and air conditioning (HVAC) systems, as well as lighting and other building management systems.</li>
             <li>Elevator Control Systems: In multi-story buildings, PLCs manage elevator movement, coordinating stops and ensuring safe and efficient operation.</li>
-            <!--Li*5-->
-
         </ul>
     </section>
 
-    <section id="#Importance">
+    <section id="importance">
         <h2>Importance</h2>
-            <p>The importance of PLCs (Programmable Logic Controllers) lies in their ability to significantly improve automation, efficiency, and safety in industrial environments. <br>Here are key points that highlight their importance:</p>
-
-            <UL>
-                <li>Improved Automation: PLCs automate complex processes, reducing the need for manual labor and increasing consistency and reliability in operations. <br>This leads to faster production cycles and less human error.</li>
-                <li>Increased Efficiency: By controlling processes automatically and precisely, PLCs optimize energy usage, reduce waste, and improve overall efficiency in manufacturing and industrial operations.</li>
-                <li>Enhanced Safety: PLCs are equipped with features like fault detection, emergency stop functions, and diagnostics, which help prevent accidents and protect both operators and equipment in hazardous environments.</li>
-                <li>Flexibility and Scalability: PLCs can be easily programmed and reprogrammed to adapt to changes in production needs or system requirements, making them highly flexible. <br>They are also scalable, meaning they can control everything from simple tasks to complex systems.</li>
-                <li>Real-time Monitoring and Control: PLCs allow for real-time monitoring of industrial processes, enabling operators to respond to issues quickly, ensure quality control, and make adjustments as needed.</li>
-            </UL>
-
+        <p>The importance of PLCs (Programmable Logic Controllers) lies in their ability to significantly improve automation, efficiency, and safety in industrial environments. <br>Here are key points that highlight their importance:</p>
+        <ul>
+            <li>Improved Automation: PLCs automate complex processes, reducing the need for manual labor and increasing consistency and reliability in operations. <br>This leads to faster production cycles and less human error.</li>
+            <li>Increased Efficiency: By controlling processes automatically and precisely, PLCs optimize energy usage, reduce waste, and improve overall efficiency in manufacturing and industrial operations.</li>
+            <li>Enhanced Safety: PLCs are equipped with features like fault detection, emergency stop functions, and diagnostics, which help prevent accidents and protect both operators and equipment in hazardous environments.</li>
+            <li>Flexibility and Scalability: PLCs can be easily programmed and reprogrammed to adapt to changes in production needs or system requirements, making them highly flexible. <br>They are also scalable, meaning they can control everything from simple tasks to complex systems.</li>
+            <li>Real-time Monitoring and Control: PLCs allow for real-time monitoring of industrial processes, enabling operators to respond to issues quickly, ensure quality control, and make adjustments as needed.</li>
+        </ul>
     </section>
     
     <section id="contacto">
@@ -60,7 +102,7 @@
             <label for="Name">Name:</label>
             <input type="text" id="Name" name="Name" required>
 
-            <label for= "Email">Email:</label>
+            <label for="Email">Email:</label>
             <input type="email" name="Email" id="email">
 
             <label for="Menssage">Message</label>
@@ -73,13 +115,12 @@
 
     <!--Esta es el pie de pagina-->
     <footer>
-        <h3>If you want to know more information, follow the next link. <br>These are some important pages that have relevant information abot PCLs</h3>
-        <!--Etiqueta de enlace (Target es para que abra una nueva pestaña)-->
-        <li><a href="https://control.com/news/category/plc-pac/"
-        target="_blank">PLCS NEWS</a></li>
-        <li><a href="https://www.automation.com/en-us/discrete-manufacturing-machine-control/programmable-controllers-plcs-and-pacs">AUTOMATION.COM</a></li>
-        <li><a href="https://new.abb.com/plc/top-stories">ABB</a></li>
-        
+        <h3>If you want to know more information, follow the next link. <br>These are some important pages that have relevant information about PLCs:</h3>
+        <ul>
+            <li><a href="https://control.com/news/category/plc-pac/" target="_blank">PLCS NEWS</a></li>
+            <li><a href="https://www.automation.com/en-us/discrete-manufacturing-machine-control/programmable-controllers-plcs-and-pacs">AUTOMATION.COM</a></li>
+            <li><a href="https://new.abb.com/plc/top-stories">ABB</a></li>
+        </ul>
     </footer>
 </body>
 </html>
